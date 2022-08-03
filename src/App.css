@@ -1,0 +1,41 @@
+nav{
+    height:15vh;
+    background-color: #282c34;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-link{
+    color: white;
+    margin: 1rem;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: orange;
+}
+
+nav .active{
+    color: red;
+}
+
+section{
+    display: grid;
+    grid-gap: 1rem;
+}
+
+article{
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    section{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    section{
+        grid-template-columns: auto auto;
+    }
+}
