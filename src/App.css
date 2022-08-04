@@ -1,41 +1,77 @@
-nav{
-    height:15vh;
-    background-color: #282c34;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-link{
+.App {
+    text-align: center;
+  }
+  .heading{
+    background-color: blue;
     color: white;
+    padding: 15px;
+  }
+
+
+  /* from section */
+  label{
+    font-size: 22px;
+    font-weight: 600;
+  }
+  input{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    width: 20rem;
+    border-radius: 10px;
+  }
+  .add-btn{
+    background-color: green;
+    color: white;
+    font-weight: 600;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+  }
+
+
+  /* card section */
+  .card-app{
     margin: 1rem;
-    text-decoration: none;
-}
-.nav-link:hover{
-    color: orange;
-}
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #282c34;
+    color: white;
+  }
+  .delete-btn, .edit-btn{
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin:0.5rem;
+    width:5rem;
+    cursor:pointer;
+    border: none;
+    transition: all 0.3s;
+  }
+  .edit-btn{
+    background-color: blue;
 
-nav .active{
-    color: red;
-}
+  }
+  .delete-btn{
+    background-color: red;
+  }
 
-section{
+  section{
     display: grid;
-    grid-gap: 1rem;
-}
+  }
 
-article{
-    background-color: aliceblue;
-    padding: 20px;
-}
-
-@media screen and (min-width: 600px) {
+  @media screen and (min-width:600px) {
     section{
         grid-template-columns: auto auto;
     }
-}
+  }
 
-@media screen and (min-width: 920px) {
+  @media screen and (min-width:768px) {
     section{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
     }
-}
+  }
+  @media screen and (min-width:900px) {
+    section{
+        grid-template-columns: auto auto auto auto;
+    }
+  }
